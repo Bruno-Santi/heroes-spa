@@ -10,9 +10,9 @@ export const HeroesRoutes = () => {
         <Routes>
           <Route path='marvel' element={<MarvelPages />} />
           <Route path='dc' element={<DcPage />} />
-          <Route path='*' element={<Navigate to={"/marvel"} />} />
+
           <Route path='search' element={<SearchPage />} />
-          <Route path='hero' element={<HeroPage />} />
+          <Route path='/hero/:id' element={<HeroPage />} />
         </Routes>
       </div>
     </>
